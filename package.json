@@ -1,0 +1,9 @@
+{
+  "name": "application-name",
+  "version": "0.0.1",
+  "description": "小宝的node聊天程序练习一",
+  "dependencies": {
+    "socket.io":"~0.9.6",
+    "mime":"~1.2.7"
+  }
+}

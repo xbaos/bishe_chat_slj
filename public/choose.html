@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>初始页面，选择性别</title>
+    <style>
+        #content{
+            background-color: #ddd;
+        }
+        #btn_body{
+            width: 150px;
+            margin: 400px auto;
+        }
+        .btn_sex{
+            width: 70px;
+            height: 30px;
+            background-color: #00B7FF;
+        }
+        #btn_boy{
+            float: left;
+            color: #000;
+        }
+        #btn_girl{
+            float: right;
+            color: crimson;
+        }
+    </style>
+</head>
+<body>
+<div id="content">
+    <div id="btn_body">
+    <button id="btn_boy" class="btn_sex" onclick="choose_sex('boy')">男</button>
+    <button id="btn_girl" class="btn_sex" onclick="choose_sex('girl')">女</button>
+    </div>
+</div>
+<script>
+    function choose_sex(sex) {
+        window.location.href='/index.html?sex='+sex;
+    }
+</script>
+</body>
+</html>
